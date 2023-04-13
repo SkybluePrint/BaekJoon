@@ -7,20 +7,20 @@
 // n개의 정수가 나열되어 있음
 // v정수를 찾아야함.
 
-const fs = require("fs");
-const filePath = process.platform === "linux" ? "/dev/stdin" : "./input.txt";
-let input = fs.readFileSync(filePath).toString().trim().split("\n");
+// const fs = require("fs");
+// const filePath = process.platform === "linux" ? "/dev/stdin" : "./input.txt";
+// let input = fs.readFileSync(filePath).toString().trim().split("\n");
 
-const intN = Number(input[0]);
-//정수를 배열에 넣어주자
-const arrayNum = input[1].split(" ");
-const searchV = input[2];
-let overlap = 0;
-for (let i = 0; i < intN; i++) {
-    if (arrayNum[i] === searchV) {
-        overlap++;
-    }
-}
+// const intN = Number(input[0]);
+// //정수를 배열에 넣어주자
+// const arrayNum = input[1].split(" ");
+// const searchV = input[2];
+// let overlap = 0;
+// for (let i = 0; i < intN; i++) {
+//     if (arrayNum[i] === searchV) {
+//         overlap++;
+//     }
+// }
 console.log(overlap);
 
 //10871 x보다 작은 수
